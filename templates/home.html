@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+    <!-- THIS PAGE WILL HAVE THE LOGO AND GITHUB LINK AND LINKS TO DIFFERENT OPERATIONS-->
+    <h1> this is home page</h1>
+    
+    <div>
+        <form action="{{ url_for('about') }}" method="GET">
+          <button type="submit">About</button>
+        </form>
+        <form action="{{ url_for('bmi') }}" method="GET">
+          <button type="submit">BssssMI</button>
+        </form>
+        <form action="{{ url_for('heartrate') }}" method="GET">
+          <button type="submit">Heart Rate</button>
+        </form>
+        <form action="{{ url_for('xray') }}" method="GET">
+          <button type="submit">X-Ray</button>
+        </form>
+      </div>
+
+</body>
+</html>
