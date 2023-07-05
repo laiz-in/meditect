@@ -10,7 +10,10 @@
     <h1>THIS IS ABOUT PAGE</h1>
     <h1>sdjsd</h1>
 
-    <a href="{{ home_url }}" class="btn">Go to Home Page</a>
+
+    <form action="{{ url_for('home') }}" method="GET">
+        <button type="submit">back to home</button>
+    </form>
 
 </body>
 </html>
