@@ -1,0 +1,16 @@
+Flask
+Flask-Cors
+joblib==1.2.0
+appdirs==1.4.3
+certifi==2020.6.20
+click==7.1.2
+distlib==0.3.0
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+python-dateutil==2.8.1
+pytz
+six
+Werkzeug
+-e .
