@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meditect.ai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="static/js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </head>
-<body background="static\assets\bg.jpg">
+<body >
+  <a href="{{ url_for('home') }}" class="round-button">
+    <img src="static/assets/up-arrow.png" alt="Up Arrow">
+  </a>
     <div class="header">
-      <div class="row">
-        <div class="col-6 col-sm-6">
+      <div class="row bg-danger">
+        <div class="col-6 col-sm-6 mt-3 bg-gradient">
           <a href="{{ url_for('home') }}">
             <img class="img-fluid" src="static\assets\meditect-logo.png" alt="Logo">
           </a>
         </div>
 
-        <div class="col-6 col-sm-6">
+        <div class="col-6 col-sm-6 mt-0">
           <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid ">
-              <button class="navbar-toggler ms-auto ml-auto custom-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler ms-auto ml-auto custom-button navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon align-items-sm-end "></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,15 +63,32 @@
         </div>
       </div>
     </div>
-
-    <section id="healthcare">
-     <div class="row">
-      <div class="col">
-         <h1>Everything about AI in healthcare</h1>
+<!--================================================section 1 about AI in healthcare================================================-->
+<section id="healthcare">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <h1>AI in Healthcare: Revolutionizing the Future of Medicine</h1>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-md-6 col-sm-12">
+      <div class="image-text-container">
+        <img src="static/assets/ai-in-healthcare.jpg" alt="AI in healthcare">
       </div>
-     </div>
-    </section>
-    
+    </div>
+    <div class="col-md-6 col-sm-12 desc-ai">
+      <p>Artificial Intelligence (AI) has emerged as a transformative force across various industries, and one area where its potential is being realized is healthcare. The integration of AI technologies into healthcare systems has the potential to revolutionize the way we approach diagnosis, treatment, and patient care. From enhancing diagnostic accuracy to improving patient outcomes, AI is paving the way for a new era in healthcare.
+        <br><br> One of the primary applications of AI in healthcare is medical imaging analysis. Radiology, for instance, has greatly benefited from AI algorithms that can analyze medical images such as X-rays, CT scans, and MRIs. These algorithms can accurately detect abnormalities and assist radiologists in making faster and more precise diagnoses. AI-powered imaging systems have proven to be particularly effective in identifying early signs of diseases like cancer, enabling early intervention and potentially saving lives.
+      </p>
+      <button class="read-more-btn" type="button">Read More..</button>
+      <button class="get-started-btn" type="button">Get Started</button>
+    </div>
+  </div>
+</section>
+
+
+<!--================================================section 1 about AI in healthcare================================================-->
+
     <div class="container">
 
       <!-- Card deck -->
@@ -270,6 +295,7 @@
       <!-- Card deck -->
         
       </div>
+      <!--=============================================    CONTACT SECTION================================================-->
    
     <section id="contactme">
       <div class="row">
@@ -278,6 +304,56 @@
         </div>
       </div>
     </section>
+      <!--=============================================    FOOTER SECTION================================================-->
+    <footer class="text-light fter">
+    <div class=" footer-container ">
+        <div class="row fter">
+            <div class="col-md-6 col-lg-6 col-xl-6 ">
+                <h5>About</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <p class="mb-0">
+                    This web app was developed with Flask-Python for the backend and HTML, CSS, and Bootstrap for the frontend. It is completely made for study purposes, and the functionalities are useful. Various AI applications are integrated with this web app. Please contact for any queries or improvements.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                <h5>Links</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                  <li class="d-inline">
+                      <a href="#" class="logo-link">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  <li class="d-inline">
+                      <a href="#" class="logo-link">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </li>
+                  <li class="d-inline">
+                      <a href="mailto:your_email@example.com" class="logo-link">
+                          <i class="fas fa-envelope"></i>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h5>Contact</h5>
+                <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-home mr-2"></i> Laizin V</li>
+                    <li><i class="fa fa-envelope mr-2"></i> laizin2107@gmail.com</li>
+                    <li><i class="fa fa-phone mr-2"></i> +91 8113937942</li>
+                    <li><i class="fa fa-print mr-2"></i> +971 503349730</li>
+                </ul>
+            </div>
+            <div class="col-12 text-center">
+                <p class="text-secondary">created by Laizin | <span>v. 1.0</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

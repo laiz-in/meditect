@@ -2,7 +2,7 @@
     position: relative;
     left: 15px;
     background-size: contain;
-    max-height: 100px;
+    max-height: 150px;
 }
 .header {
     background:transparent;
@@ -14,32 +14,115 @@
   }
 
 #healthcare{
-    background-color: aquamarine;
+    /* background: linear-gradient(to right, rgb(5, 70, 59), transparent); */
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
+    /* border-radius: 25px;
+    backdrop-filter: blur(6px); */
+
 }
+.container-fluid .navbar-toggler-icon {
+  color: white;
+}
+.image-text-container {
+    display: flex;
+    align-items: center;
+  }
+
+
+  #healthcare h1{
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* For webkit-based browsers (Chrome, Safari, etc.) */
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+  }
+  .image-text-container img {
+    width: 650px; 
+    border-radius:25px ;
+  }
+  #healthcare p{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    color: rgb(177, 173, 173);
+    font-weight: 700;
+  }
+  .read-more-btn {
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    margin-right: 35px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .read-more-btn:hover{
+    background: linear-gradient(to right, #731499, #b30a34);
+
+  }
+  .card .card-body{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .get-started-btn {
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .get-started-btn:hover {
+    background: linear-gradient(to right, #731499, #b30a34);
+  }
+  
 #contactme{
-    background-color: blueviolet;
+    background: linear-gradient(to right, rgb(5, 70, 59), rgb(5, 39, 23));
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 #navbarSupportedContent ul li a{
-    color: rgb(243, 241, 241);
+    color: rgb(204, 201, 201);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 3px;
+    border-radius: 12px;
+
+}
+#navbarSupportedContent ul li a:hover{
+    color: rgb(249, 252, 251);
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     margin-left: 3em;
+    background: rgb(66, 66, 66);
+    border-radius: 12px;
+    transition: 0ms;
 }
 .dropdown ul li a{
     color: rgb(241, 240, 240);
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
 }
-.dropdown .dropdown-item ul li a:hover{
-    color: blue;
+.dropdown ul li a:hover{
+    color: rgb(13, 176, 182);
 }
+
 .dropdown ul{
-    background-color:rgb(4, 141, 107) ;
+    background-color:rgb(29, 83, 70) ;
     border: none;
 }
 .navbar-nav{
@@ -60,9 +143,85 @@
     margin: 0% 0% 0% 3%;
     padding: 6% 0%;
   }
+  .round-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #b731ec, #eb2153);
+    position: fixed;
+    bottom: 55px;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .logo-link i {
+    font-size: 24px; 
+    color: #e4f168;
+}
+
+  .round-button img {
+    width: 100%;
+    height: 50%;
+    width: 50%;
+  }
+  
+footer a {
+    color: #f8f9fa!important
+}
+.footer-container{
+    background: linear-gradient(to right, rgb(5, 70, 59), rgb(5, 39, 23));
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-radius: 15px ;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.fter{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
   
 /*=======================================================================    FOR MOBILE DEVICES     =================================================================*/
 @media (max-width: 600px) {
+
+  .container-fluid{
+    margin-top: 0;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  #healthcare h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+  }
+    .fter{
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fter p{
+        font-size: 12px;
+    }
+    .fter h5{
+       padding-top: 10px;    }
+   .footer-container{
+    width: 100% ;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   #healthcare p{
+    padding-top: 9px;
+    font-size:15px;
+    color: rgb(177, 173, 173);
+    font-weight: 500;
+  }
     .header {
       width: 100%; 
       margin-left: 0;
@@ -70,8 +229,9 @@
       background: transparent;
     }
     body{
-        background-image: url('assets/bg-mobile.jpg') !important;
-        background-size:cover;
+        /* background-image: url('assets/bg-mobile.jpg') !important; */
+        min-width: 100% !important;
+        background: linear-gradient(to right, black, rgb(44, 44, 44));
     }
     #contactme, #healthcare{
         width:95%;
@@ -82,4 +242,8 @@
         background-color: white;
         color: white;
     }
+    .img-fluid {
+        max-height: 80px;
+    }
+
   }
