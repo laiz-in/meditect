@@ -1,3 +1,9 @@
   gradient  :   background: linear-gradient(to right, #b731ec, #eb2153);
     font-family: 'Poppins', sans-serif;
     font-family: 'Oswald', sans-serif;
+
+
+
+BONE FRACTURE   
+HEART DISEASE 
+DIABETIC RETINOPATHY DETECTION

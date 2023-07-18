@@ -1,16 +1,78 @@
-<!-- THIS PAGE DEALS WITH THE HEART RATE ANALYSIS-->
-<!DOCTYPE html>
+<!-- ALL ABOUT THE CONTENTS OF THE PAGE-->
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>THIS IS HEART RATE PAGE</h1>
+    <title>Meditect.ai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="static/js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+<body background="static\assets\bg.jpg">
+  <a href="{{ url_for('home') }}" class="round-button">
+    <img src="static/assets/up-arrow.png" alt="Up Arrow">
+  </a>
+    <div class="header">
+      <div class="row">
+        <div class="col-6 col-sm-6 mt-3 ">
+          <a href="{{ url_for('home') }}">
+            <img class="img-fluid" src="static\assets\meditect-logo.png" alt="Logo">
+          </a>
+        </div>
 
-    <form action="{{ url_for('home') }}" method="GET">
-        <button type="submit">back to home</button>
-    </form>
-</body>
-</html>
+        <div class="col-6 col-sm-6 mt-0 ">
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+              <button class="navbar-toggler ms-auto ml-auto custom-button navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon align-items-sm-end "></span>
+              </button>
+              <div class="collapse navbar-collapse mt-lg-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">about us</a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ url_for('bmi') }}">BMI analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('xray') }}">pneumonia analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('heartrate') }}">heartrate analysis</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactme">contact</a>
+                  </li>
+                </ul>
+        
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section id="aboutus">
+        <div class="row">
+            <div class="col-sm-12 ml-5">
+                <p> aree i didnt make this yet</p>
+            </div>
+        </div>
+
+    </section>
+    </body>
