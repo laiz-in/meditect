@@ -1,42 +1,34 @@
+/*  LOGO CSS*/
 .img-fluid {
     position: relative;
     left: 15px;
     background-size: contain;
     max-height: 150px;
 }
+/* BODY OF ALL HTML PAGES*/
 body{
   background: linear-gradient(to right, rgb(4, 19, 36),rgb(68, 67, 67));
 }
+/*HEADER SECTION*/
 .header {
     background:transparent;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     color:  white;
-
   }
-
-#healthcare{
-    /* background: linear-gradient(to right, rgb(5, 70, 59), transparent); */
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    margin-bottom: 50px;
-    /* border-radius: 25px;
-    backdrop-filter: blur(6px); */
-
-}
 .container-fluid .navbar-toggler-icon {
   color: white;
 }
-.image-text-container {
-    display: flex;
-    align-items: center;
-  }
-
-
-  #healthcare h1{
+/*========================================================       AI in healthcare section CSS  =======================================*/
+#healthcare{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-bottom: 50px;
+} 
+#healthcare h1{
     background: linear-gradient(to right, #b731ec, #eb2153);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,16 +43,20 @@ body{
     width: 650px; 
     border-radius:25px ;
   }
+  .image-text-container {
+    display: flex;
+    align-items: center;
+  }
   #healthcare p{
     font-family: 'Poppins', sans-serif;
     font-size:20px;
     color: rgb(177, 173, 173);
     font-weight: 500;
   }
-  .read-more-btn {
+  #healthcare a {
     background: linear-gradient(to right, #113444, #172b33);
     margin-right: 35px;
-    color: #fff;
+    color: #cac8c8;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -69,27 +65,11 @@ body{
     font-family: 'Poppins', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
-  .read-more-btn:hover{
+  #healthcare a:hover{
     background: linear-gradient(to right, #0e4766, #032a3a);
 
   }
 
-  .get-started-btn {
-   
-    background: linear-gradient(to right, #113444, #172b33);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 2rem;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: rgba(27, 27, 27, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  .get-started-btn:hover {
-    background: linear-gradient(to right, #0e4766, #032a3a);
-  }
   .container{
     width: 80%;
     margin-left: auto;
@@ -208,7 +188,15 @@ footer a {
   border-radius: 20px;
   
 }
-.card-body button:hover{
+.card-body a{
+  background: linear-gradient(to right, #113444, #172b33);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  
+}
+.card-body button:hover, .card-body a:hover{
   background: linear-gradient(to right, #0e4766, #032a3a);
   color: white;
   border: none;
@@ -252,18 +240,72 @@ border: none;
   margin-right: auto;
   padding: 1rem;
   position: relative;
-  background: linear-gradient(to right, #b731ec, #eb2153);
-  padding: 3px;
-  border-radius: 20px;
-}
-#innersection{
   background: linear-gradient(to right,  rgb(15, 19, 22), rgb(18, 31, 39));
-  color: white;
-  padding: 2rem;
-  border-radius: 19px;
-  font-family: 'Poppins', sans-serif;
+  padding: 3px;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
+/*=======================================================================    ReadMoreAboutAI.html CSS START    =================================================================*/
+#ReadMoreAboutAI{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*=======================================================================    ReadMoreAboutAI.html CSS ENDS  =================================================================*/
+
+/*=======================================================================    BMI CSS ENDS  =================================================================*/
+#bmisection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    BMI CSS ENDS  =================================================================*/
+
+/*=======================================================================    DIABETIC DISEASE CSS STARTS  =================================================================*/
+#diabeticdeasease{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    DIABETIC DISEASE CSS ENDS  =================================================================*/
+
+/*=======================================================================    DIABETIC RETINOPATHY CSS STARTS  =================================================================*/
+#diabeticretinopathy{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/*=======================================================================    DIABETIC RETINOPATHY CSS ENDS  =================================================================*/
+
+
+/*=======================================================================    SKIN CSS STARTS  =================================================================*/
+#skindiseasesection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    SKIN CSS ENDS  =================================================================*/
+
+/*=======================================================================    HEART DISEASE CSS ENDS  =================================================================*/
+#heartdiseasesection{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    HEART DISEASE CSS ENDS  =================================================================*/
+
+/*=======================================================================    PNEUMONIA DISEASE CSS STARTS  =================================================================*/
+#pneumoniasection{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*=======================================================================    PNEUMONIA DISEASE CSS ENDS  =================================================================*/
+
+
 
 /*=======================================================================    FOR MOBILE DEVICES     =================================================================*/
 @media (max-width: 600px) {
@@ -295,6 +337,11 @@ border: none;
     font-family: 'Poppins', sans-serif;
 
   }
+  #contactme{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
     .fter{
         width:95%;
         margin-left: auto;
@@ -310,11 +357,13 @@ border: none;
     margin-left: auto;
     margin-right: auto;
    }
+   /*=========================================================== AI IN HEALTHCARE FOR MOBILE  =====================================*/
    #healthcare p{
     padding-top: 9px;
-    font-size:15px;
+    font-size:13px;
     color: rgb(177, 173, 173);
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: 20px;
   }
     .header {
       width: 100%; 
@@ -325,7 +374,7 @@ border: none;
     body{
         min-width: 100% !important;
         max-width: 100%;
-        background: linear-gradient(to right, black, rgb(44, 44, 44));
+        background:linear-gradient(to right, #050f13, #041b24);
         margin: 0;
         padding:0;
     }
@@ -348,17 +397,5 @@ border: none;
     #navbarSupportedContent ul li a{
       margin: 0rem;
     }
-    .d
-  #aboutus p{
-    background: linear-gradient(to right, #b731ec, #eb2153);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* For webkit-based browsers (Chrome, Safari, etc.) */
-    background-clip: text;
-    text-fill-color: transparent;
-    font-weight: 800;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    padding: 5px;
-  }
+  
   }

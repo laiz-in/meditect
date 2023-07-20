@@ -51,7 +51,7 @@
                     <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('about') }}">about us</a>
+                    <a class="nav-link" href="#foot">about us</a>
                   </li>
                   <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,11 +59,11 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="{{ url_for('bmi') }}">BMI analysis</a></li>
-                      <li><a class="dropdown-item" href="{{ url_for('xray') }}">Pneumonia analysis</a></li>
-                      <li><a class="dropdown-item" href="{{ url_for('heartrate') }}">Heart disease analysis</a></li>
-                      <li><a class="dropdown-item" href="{{ url_for('heartrate') }}">Skin disease analysis</a></li>
-                      <li><a class="dropdown-item" href="{{ url_for('heartrate') }}">Diabetics analysis</a></li>
-                      <li><a class="dropdown-item" href="{{ url_for('heartrate') }}">Diabetics retinopathy</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('pneumonia') }}">Pneumonia analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('heartdisease') }}">Heart disease analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('skindisease') }}">Skin disease analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('diabeticdisease') }}">Diabetics analysis</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('diabeticretinopathy') }}">Diabetics retinopathy</a></li>
 
 
                     </ul>
@@ -95,7 +95,7 @@
     <!-- MAIN HEADING IMAGE-->
                 <div class="col-md-6 col-sm-12">
                   <div class="image-text-container">
-                    <img src="static/assets/ai-in-healthcare.jpg" alt="AI in healthcare">
+                    <img src="static\assets\ai-in-healthcare-copy.jpg" alt="AI in healthcare">
                   </div>
                 </div>
 
@@ -105,13 +105,11 @@
                   <br><br> One of the primary applications of AI in healthcare is medical imaging analysis. Radiology, for instance, has greatly benefited from AI algorithms that can analyze medical images such as X-rays, CT scans, and MRIs. These algorithms can accurately detect abnormalities and assist radiologists in making faster and more precise diagnoses. AI-powered imaging systems have proven to be particularly effective in identifying early signs of diseases like cancer, enabling early intervention and potentially saving lives.
                 </p>
                 <!-- READ MORE BUTTON-->
-                <button class="read-more-btn" type="button">
-                  <i class="fas fa-chevron-right"></i> Read More..
-                </button>
+                <a href="{{ url_for('ReadMoreAboutAI') }}" class="btn btn-light-blue btn-md">Read more..</a>
+                <a href="{{ url_for('ReadMoreAboutAI') }}" class="btn btn-light-blue btn-md">
+                  Get started <i class="fas fa-arrow-right"></i>
+                </a>
                 
-                <button class="get-started-btn" type="button">
-                  Get Started <i class="fas fa-arrow-right"></i>
-                </button>
               </div>
   </div>
 </section>
@@ -142,10 +140,10 @@
                 <!--Text-->
                 <p class="card-text">BMI is a measure used to assess an individual's weight status in relation to their height.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md">Read more</button>  
-                <button type="button" class="btn btn-light-blue btn-md">
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8920809/" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{{ url_for('bmi') }}" class="btn btn-light-blue btn-md">
                   <i class="fas fa-check-circle"></i> Try it out
-                </button>  
+                </a>
               </div>   
             </div>
             <!-- Card -->
@@ -172,10 +170,10 @@
             <!--Text-->
             <p class="card-text">Analyzing the pattern of chest xray tp predict pneumonia</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-            <button type="button" class="btn btn-light-blue btn-md">
+            <a href="https://www.healthline.com/health/pneumonia" class="btn btn-light-blue btn-md">Read more</a>
+            <a href="{{ url_for('pneumonia') }}" class="btn btn-light-blue btn-md">
               <i class="fas fa-check-circle"></i> Try it out
-            </button>
+            </a>
       
           </div>
       
@@ -203,10 +201,10 @@
             <!--Text-->
             <p class="card-text">Use machine learning to predict the chances of heart diseases</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-            <button type="button" class="btn btn-light-blue btn-md">
-              <i class="fas fa-check-circle"></i> Try it out
-            </button>
+            <a href="https://www.creative-biolabs.com/drug-discovery/diagnostics/cardiovascular.htm?gclid=CjwKCAjwtuOlBhBREiwA7agf1uw5B_yxYVpFDVc9OdVC3uj4g_WpZUvy3SY58s9UJ2IlV2PNzQFa8hoCmuwQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{{ url_for('heartdisease') }}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
           </div>
       
         </div>
@@ -233,10 +231,10 @@
             <!--Text-->
             <p class="card-text">Use deep learning to analyse the skin diseases with the image you provide </p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-            <button type="button" class="btn btn-light-blue btn-md">
-              <i class="fas fa-check-circle"></i> Try it out
-            </button>
+            <a href="https://my.clevelandclinic.org/health/diseases/21573-skin-diseases" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{{ url_for('skindisease') }}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
           </div>
       
         </div>
@@ -263,10 +261,10 @@
             <!--Text-->
             <p class="card-text">With the retinal images , find the chances of diabetic retinopathy</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-            <button type="button" class="btn btn-light-blue btn-md">
-              <i class="fas fa-check-circle"></i> Try it out
-            </button>
+            <a href="https://www.sightsavers.org/protecting-sight/diabetic-retinopathy/?gad=1&gclid=CjwKCAjwtuOlBhBREiwA7agf1r5M9FqsevojPPywyCyJq0XLsKXmDWNlU_lNsILuIsqtXSXmPkslaxoCFJgQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{{ url_for('diabeticretinopathy') }}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
           </div>
       
         </div>
@@ -289,14 +287,14 @@
           <div class="card-body">
       
             <!--Title-->
-            <h4 class="card-title">Alzheimer's Disease analysis</h4>
+            <h4 class="card-title">Diabetic Disease analysis</h4>
             <!--Text-->
-            <p class="card-text">Predict the chances of Alzheimer's Disease with machine learning algorithms</p>
+            <p class="card-text">Predict the chances of Diabetic Disease with machine learning algorithm</p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
-            <button type="button" class="btn btn-light-blue btn-md">
-              <i class="fas fa-check-circle"></i> Try it out
-            </button>
+            <a href="https://understandingdiabetes.org/?gclid=CjwKCAjwtuOlBhBREiwA7agf1vGfeyMAO4IpAVAjUfA_G9xYUTUJws-05jRvuneyKszxvsm42pN2_RoCTggQAvD_BwE" class="btn btn-light-blue btn-md">Read more</a>
+                <a href="{{ url_for('diabeticdisease') }}" class="btn btn-light-blue btn-md">
+                  <i class="fas fa-check-circle"></i> Try it out
+                </a>
           </div>
       
         </div>
@@ -311,9 +309,7 @@
 
 <!--==========================================================   CONTACT SECTION STARTS    ================================================-->
 <section id="contactme">
-  <section id="innersection">
     <h1>we need to add contents here</h1>
-  </section>
 </section>
 <!--==========================================================   CONTACT SECTION ENDS    ================================================-->
   
@@ -323,7 +319,7 @@
     <div class=" footer-container ">
         <div class="row fter">
             <div class="col-md-6 col-lg-6 col-xl-6 ">
-                <h5>About</h5>
+                <h5>Contact me</h5>
                 <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                 <p class="mb-0">
                     This web app was developed with Flask-Python for the backend and HTML, CSS, and Bootstrap for the frontend. It is completely made for study purposes, and the functionalities are useful. Various AI applications are integrated with this web app. Please contact for any queries or improvements.
